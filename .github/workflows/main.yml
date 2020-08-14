@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
     -name: stepname
-      uses: actions/checkout@v1
-      uses: actions/steup-node@v1
-      run: |
+      -uses: actions/checkout@v1
+      -uses: actions/steup-node@v1
+      -run: |
         echo hello
         echo world
