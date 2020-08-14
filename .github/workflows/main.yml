@@ -19,9 +19,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
-      - name: Node
-        uses: actions/steup-node@v1
-
       - name: Run
         run: |
           echo hello
