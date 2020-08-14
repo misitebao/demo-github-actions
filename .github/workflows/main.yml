@@ -2,10 +2,13 @@ name: DEMO_CI
 
 on: 
   push: 
-    branches:
+    branches: 
     - master
-    paths: 
-    - src/*
+    # paths: 
+    # - src/*
+  pull_request: 
+    branches: 
+    - master
 
 jobs: 
   jobname: 
