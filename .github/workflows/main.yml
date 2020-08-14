@@ -10,11 +10,13 @@ on:
 jobs: 
   jobname: 
     runs-on: ubuntu-latest
+    
     steps: 
-    -name: checkout
-      uses: actions/checkout@v1
-    -name: node
-      -uses: actions/steup-node@v1
-      -run: |
-        echo hello
-        echo world
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Node
+        uses: actions/steup-node@v1
+      - name: Run
+        run: |
+          echo hello
+          echo world
