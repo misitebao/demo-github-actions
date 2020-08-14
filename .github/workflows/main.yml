@@ -1,0 +1,19 @@
+name: DEMO_CI
+
+on: 
+  push: 
+    branches:
+    - master
+    paths: 
+    - src/*
+
+jobs: 
+  jobname: 
+    runs-on: ubuntu-latest
+    steps: 
+    -name: stepname
+      uses: actions/checkout@master
+      uses: actions/steup-node@v1
+      run: |
+        echo hello
+        echo world
